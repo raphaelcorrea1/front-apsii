@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supermercado Muffatinho</title>
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/funcgenericas.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+  <main class="form-signin w-100 m-auto">
+    <form class="form" id= "form">
+      <img class="mb-4" src="img/muffatinho.png" alt="" width="150" height="100">
+      <h1 class="h3 mb-3 fw-normal">Fazer login</h1>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput cpf" placeholder="CPF">
+        <label for="floatingInput">CPF</label>
+      </div>
+      <div class="form-floating ">
+        <input type="password" class="form-control" id="floatingPassword password" placeholder="senha" onkeypress="return onlynumber();">
+        <label for="floatingPassword">Senha</label>
+      </div>
+      <div class="msg"></div>
+      </div>
+      <button type="button" class="w-100 btn btn-lg btn-light" id="btnLogin">Entrar</button>
+    </form>
+    <script src="/js/login.js"></script>
+    <script>
+let botaoLogin = document.querySelector('#btnLogin');
+
+botaoLogin.addEventListener('click', () => {
+    window.location.href="/Homepage/homepage.html";
+})
+</script>
+  </main>
+</body>
+
+</html>
